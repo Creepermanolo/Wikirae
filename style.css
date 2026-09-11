@@ -1,24 +1,78 @@
+body{
+    border-collapse: collapse;
+    box-sizing: border-box;
+    background-color: #dddddd;
+}
 .main{
     margin-left: 20%;
     margin-right: 20%;
+    background-color: white;
+    padding: 5%;
 }
-.h1{
+h1, h2, h3, h4, h5, h6{
+    font-family: "Cormorant SC", serif;
+}
+h1{
     border-bottom: 1px black solid;
+    font-size: 3em;
+}
+h2{
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.5em;
+}
+.info h2, .info h3{
+    margin-bottom: 0%;
+    margin-top: 0%;
 }
 .info{
     border: 1px black solid;
+    padding: 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width : 40%;
     float: right;
 }
+.info img{
+    width: 50%;
+    height: auto;
+}
 .inftit{
-    font-size: 2em;
-    padding: 2px;
     background-color: brown;
     color : white;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.inftit2{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 2em;
     font-weight: bold;
     width: 100%;
     text-align: center;
+}
+
+.quote {
+    background-color: #dddddd;
+    width: 40%;
+    padding: 5%;
+    border-radius: 16px;
+}
+.mainquote {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 8px;
+    font-size: 1.5em;
+}
+.transquote {
+    font-style: italic;
+    margin-bottom: 8px;
+}
+.authorquote {
+    text-align: right;
 }
