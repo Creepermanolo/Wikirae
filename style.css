@@ -3,23 +3,76 @@
 *::after {
   box-sizing: border-box;
 }
+
 body{
+    --hesrianvermillon: hsl(9, 71%, 45%);
+    --berianicbrown: hsl(37, 67%, 25%);
+    --mercianyellow: hsl(46, 75%, 47%);
+    --saringianyellow: hsl(47, 75%, 65%);
+    --nemianyellow:  hsl(56, 78%, 56%);
+    --andoarchiangray: hsl(60, 15%, 17%);
+    --ogrishgreen: hsl(83, 29%, 22%);
+    --aemhoriangreen: hsl(103, 34%, 59%);
+    --mediarkhonicgreen: hsl(125, 25%, 41%);
+    --gernaniangreen: hsl(145, 26%, 34%);
+    --clandoriangreen: hsl(150, 67%, 18%);
+    --orcanicgreen: hsl(154, 20%, 39%);
+    --arkhongray: hsl(157, 25%, 41%);
+    --welliscgreen: hsl(165, 89%, 22%);
+    --galovariangreen: hsl(167, 45%, 24%);
+    --almanicwhite: hsl(174, 19%, 80%);
+    --aganniancyan: hsl(184, 61%, 40%);
+    --meeranianblue: hsl(191, 36%, 39%);
+    --eratianteal: hsl(207, 79%, 34%);
+    --luvianblue: hsl(206, 94%, 21%);
+    --neraylianblue: hsl(209, 35%, 41%);
+    --segrishblue: hsl(212, 41%, 48%);
+    --nordicblue: hsl(214, 48%, 62%);
+    --Weldianblue: hsl(227, 46%, 35%);
+    --laelianblue: hsl(238, 74%, 34%);
+    --lydianindigo: hsl(251, 53%, 29%);
+    
+    --estarianpurple: hsl(278, 43%, 36%);
+    --erelmagenta: hsl(327, 70%, 26%);
+    --vanneanpink: hsl(343, 74%, 46%);
+    --thrannianred: hsl(349, 48%, 30%);
+    --sxaelred: hsl(352, 100%, 17%);
+    --medianred: hsl(355, 84%, 30%);
+    --lordomblack: hsl(40, 10%, 6%);
+    --draconianwhite: hsl(192, 30%, 87%);
+
+
     border-collapse: collapse;
     box-sizing: border-box;
     background-color: #dddddd;
     padding: 0%;
     text-align: justify;
     margin: 0;
+    font-size: 18px;
+    font-family: Times, serif;
 
 }
 html{
     padding: 0%;
 }
 .main{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     background-color: white;
     padding: 5%;
+    padding-top: 8px;
+}
+.head{
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 8px;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: sticky;
+    top: 0%;
+    overflow:visible;
+
 }
 h1, h2, h3, h4, h5, h6{
     margin-top: 0%;
@@ -52,9 +105,9 @@ h3 {
     float: right;
     margin-left: 1em;
 }
-.info img{
-    width: 50%;
-    height: auto;
+
+.info table{
+    width:100%
 }
 .inftit{
     background-color: brown;
@@ -94,7 +147,36 @@ h3 {
 .authorquote {
     text-align: right;
 }
+img{
+    max-width: 10em;
+    max-height: 20em;
+    display: block;
+}
+.image{
+    float: left;
+    width: fit-content;
+    margin-right: 1em;
+    padding: 0.5em;
+    border:0.5px rgb(100, 100, 100) solid;
+    overflow: hidden;
+    
+}
 
+.image_right{
+    float: right;
+    max-width: 15em;
+    max-height: 20em;
+    margin-left: 1em;
+    margin-right: 0em;
+    padding: 0.5em;
+    border:0.5px rgb(100, 100, 100) solid
+}
+
+.info img{
+    margin-left: 0em;
+    margin-right: 0;
+    border: none;
+}
 @media (orientation: portrait) {
     body{
         font-size: 12px;
@@ -111,5 +193,105 @@ h3 {
   .quote{
     width: 100%;
   }
+  .head{
+    margin: 0%;
+  }
   
+}
+.hor_tab{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.search-line {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.search-box {
+    position: relative;
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 42px;
+}
+
+#search {
+    display: block;
+    width: 100%;
+    height: 42px;
+    margin: 0;
+    padding: 0 12px 0 42px;
+    border: 1px solid #888;
+    border-right: none;
+    border-radius: 3px 0 0 3px;
+    background-color: white;
+    color: #333;
+    font-size: 18px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#search:focus {
+    border-color: #555;
+}
+
+.search-icon {
+    position: absolute;
+    left: 14px;
+    z-index: 2;
+    transform: translateY(-2px);
+    color: #888;
+    font-size: 32px;
+    line-height: 42px;
+    pointer-events: none;
+}
+
+.search-line button {
+    flex: 0 0 auto;
+    height: 42px;
+    margin: 0;
+    padding: 0 16px;
+    border: 1px solid #888;
+    border-radius: 0 3px 3px 0;
+    background-color: #f8f8f8;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-line button:hover {
+    background-color: #eeeeee;
+}
+
+#suggestions {
+    display: none;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #ccc;
+    background-color: white;
+    text-align: left;
+}
+
+#suggestions li {
+    padding: 10px;
+    color: #222;
+    cursor: pointer;
+}
+
+#suggestions li:hover {
+    background-color: #eeeeee;
 }
