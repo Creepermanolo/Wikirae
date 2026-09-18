@@ -1,6 +1,14 @@
 [
-  "index.html",
-  "Lydion-oldkingd.html",
-  "royaume-des-anciens.html",
-  "cormorant.html"
+    {
+        "nom": "Accueil",
+        "fichier": "index.html"
+    },
+    {
+        "nom": "Ancien Lydion",
+        "fichier": "Lydion_old_kingdom.html"
+    },
+    {
+        "nom": "Saint Empire",
+        "fichier": "Holy_imperium.html"
+    }
 ]

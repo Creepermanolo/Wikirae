@@ -52,6 +52,48 @@ body{
     font-family: Times, serif;
 
 }
+.hesrianvermillonbg { background-color: hsl(9, 71%, 45%); }
+.berianicbrownbg { background-color: hsl(37, 67%, 25%); }
+.mercianyellowbg { background-color: hsl(46, 75%, 47%); }
+.saringianyellowbg { background-color: hsl(47, 75%, 65%); }
+.nemianyellowbg { background-color: hsl(56, 78%, 56%); }
+.andoarchiangraybg { background-color: hsl(60, 15%, 17%); }
+.ogrishgreenbg { background-color: hsl(83, 29%, 22%); }
+.aemhoriangreenbg { background-color: hsl(103, 34%, 59%); }
+.mediarkhonicgreenbg { background-color: hsl(125, 25%, 41%); }
+.gernaniangreenbg { background-color: hsl(145, 26%, 34%); }
+.clandoriangreenbg { background-color: hsl(150, 67%, 18%); }
+.orcanicgreenbg { background-color: hsl(154, 20%, 39%); }
+.arkhongraybg { background-color: hsl(157, 25%, 41%); }
+.welliscgreenbg { background-color: hsl(165, 89%, 22%); }
+.galovariangreenbg { background-color: hsl(167, 45%, 24%); }
+.almanicwhitebg { background-color: hsl(174, 19%, 80%); }
+.aganniancyanbg { background-color: hsl(184, 61%, 40%); }
+.meeranianbluebg { background-color: hsl(191, 36%, 39%); }
+.eratiantealbg { background-color: hsl(207, 79%, 34%); }
+.luvianbluebg { background-color: hsl(206, 94%, 21%); }
+.neraylianbluebg { background-color: hsl(209, 35%, 41%); }
+.segrishbluebg { background-color: hsl(212, 41%, 48%); }
+.nordicbluebg { background-color: hsl(214, 48%, 62%); }
+.Weldianbluebg { background-color: hsl(227, 46%, 35%); }
+.laelianbluebg { background-color: hsl(238, 74%, 34%); }
+.lydianindigobg { background-color: hsl(251, 53%, 29%); color: white; }
+.estarianpurplebg { background-color: hsl(278, 43%, 36%); }
+.erelmagentabg { background-color: hsl(327, 70%, 26%); }
+.vanneanpinkbg { background-color: hsl(343, 74%, 46%); }
+.thrannianredbg { background-color: hsl(349, 48%, 30%); }
+.imperiumredbg { background-color: hsl(350, 95%, 34%);}
+.sxaelredbg { background-color: hsl(352, 100%, 17%); }
+.medianredbg { background-color: hsl(355, 84%, 30%); }
+.lordomblackbg { background-color: hsl(40, 10%, 6%); }
+.draconianwhitebg { background-color: hsl(192, 30%, 87%); }
+
+.caeliangoldtxt h2, .caeliangoldtxt h3, .caeliangoldtxt p { 
+
+    background: radial-gradient(circle,#F5DBA1 0%, #C19A5D 33%, #A45303 67%, #5B2C01 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+
 html{
     padding: 0%;
 }
@@ -110,8 +152,7 @@ h3 {
     width:100%
 }
 .inftit{
-    background-color: brown;
-    color : white;
+
     width: 100%;
     text-align: center;
     margin-bottom: 8px;
@@ -148,8 +189,8 @@ h3 {
     text-align: right;
 }
 img{
-    max-width: 10em;
-    max-height: 20em;
+    max-width: 15em;
+    max-height: 30em;
     display: block;
 }
 .image{
@@ -164,8 +205,7 @@ img{
 
 .image_right{
     float: right;
-    max-width: 15em;
-    max-height: 20em;
+
     margin-left: 1em;
     margin-right: 0em;
     padding: 0.5em;
@@ -218,6 +258,7 @@ img{
     flex: 1 1 auto;
     min-width: 0;
     height: 42px;
+    
 }
 
 #search {
@@ -234,6 +275,7 @@ img{
     font-size: 18px;
     box-sizing: border-box;
     outline: none;
+    font-family: Times, serif;
 }
 
 #search:focus {

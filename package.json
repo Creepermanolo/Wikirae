@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "generate-pages": "node generate-pages.js",
+        "start": "npm run generate-pages && npx http-server ."
+    }
+}

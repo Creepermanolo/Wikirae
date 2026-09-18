@@ -15,22 +15,26 @@
 
 <body>
     <div class="head">
-        <form>
-            <div>
-                <input
-                type="search"
-                id="maRecherche"
-                name="q"
-                placeholder="Rechercher sur le site…"
-                size="30" />
-                <button>Rechercher</button>
+    <form id="searchForm" autocomplete="off">
+        <div class="search-line">
+            <div class="search-box">
+                <span class="search-icon">⌕</span>
+
+                <input type="search" id="search" placeholder="Rechercher sur Wikirae" aria-autocomplete="list"
+                    aria-controls="suggestions" required>
+
+                <ul id="suggestions" role="listbox"></ul>
             </div>
-        </form>
-    </div>
+            <button type="submit">Rechercher</button>
+        </div>
+    </form>
+
+    <script src="recherche.js"></script>
+</div>
     <div class="main">
-        <h1>Saint Empire</h1>
+        <h1>Royaume de Lydion</h1>
         <div class="info">
-            <div class="inftit">
+            <div class="inftit lydianindigobg">
                 <h2>Royaume de Lydion</h2>
                 <h3>Lydiocratia</h3>
                 <p>-1714 - -1270</p>

@@ -16,11 +16,27 @@
 
 <body>
 
-    <?php include_once('header.php'); ?>
+    <div class="head">
+    <form id="searchForm" autocomplete="off">
+        <div class="search-line">
+            <div class="search-box">
+                <span class="search-icon">⌕</span>
+
+                <input type="search" id="search" placeholder="Rechercher sur Wikirae" aria-autocomplete="list"
+                    aria-controls="suggestions" required>
+
+                <ul id="suggestions" role="listbox"></ul>
+            </div>
+            <button type="submit">Rechercher</button>
+        </div>
+    </form>
+
+    <script src="recherche.js"></script>
+</div>
     <div class="main">
         <h1>Saint Empire</h1>
         <div class="info">
-            <div class="inftit">
+            <div class="inftit imperiumredbg caeliangoldtxt">
                 <h2>Saint-Empire</h2>
                 <h3>Imperium Sanctus</h3>
                 <p>1 - 705</p>
@@ -335,8 +351,11 @@
             quia modi aut tenetur ducimus est quod dolores et architecto eveniet. Et error tenetur et dolores galisum
             qui
             molestias natus ut voluptate saepe qui dicta sunt ex deserunt error et dolores dolorum.</p>
+        <div class="image_right">
+            <img src="https://i.pinimg.com/736x/2b/27/6c/2b276c7ab49976cae2f57275a39da28f.jpg">
+        </div>
         <h3>Gazaem / Tyrannus</h3>
-        <img class="right" src="https://i.pinimg.com/736x/2b/27/6c/2b276c7ab49976cae2f57275a39da28f.jpg">
+        
         <p>Sit molestias pariatur ex enim suscipit in voluptas quibusdam aut velit fuga id galisum quod id quia
             recusandae!
             Sit sunt exercitationem ea sapiente perferendis eos dolor galisum ab delectus fugit. Ut libero impedit cum
