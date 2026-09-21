@@ -10,5 +10,9 @@
     {
         "nom": "Saint Empire",
         "fichier": "Holy_imperium.html"
+    },
+    {
+        "nom": "Sainte Estaran",
+        "fichier": "Holy_estaran.html"
     }
 ]

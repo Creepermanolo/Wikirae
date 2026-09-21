@@ -32,7 +32,7 @@ body{
     --laelianblue: hsl(238, 74%, 34%);
     --lydianindigo: hsl(251, 53%, 29%);
     
-    --estarianpurple: hsl(278, 43%, 36%);
+    --aestarianpurple: hsl(278, 43%, 36%);
     --erelmagenta: hsl(327, 70%, 26%);
     --vanneanpink: hsl(343, 74%, 46%);
     --thrannianred: hsl(349, 48%, 30%);
@@ -40,6 +40,8 @@ body{
     --medianred: hsl(355, 84%, 30%);
     --lordomblack: hsl(40, 10%, 6%);
     --draconianwhite: hsl(192, 30%, 87%);
+
+    --caeliangold:
 
 
     border-collapse: collapse;
@@ -52,47 +54,54 @@ body{
     font-family: Times, serif;
 
 }
-.hesrianvermillonbg { background-color: hsl(9, 71%, 45%); }
-.berianicbrownbg { background-color: hsl(37, 67%, 25%); }
-.mercianyellowbg { background-color: hsl(46, 75%, 47%); }
-.saringianyellowbg { background-color: hsl(47, 75%, 65%); }
-.nemianyellowbg { background-color: hsl(56, 78%, 56%); }
-.andoarchiangraybg { background-color: hsl(60, 15%, 17%); }
-.ogrishgreenbg { background-color: hsl(83, 29%, 22%); }
-.aemhoriangreenbg { background-color: hsl(103, 34%, 59%); }
-.mediarkhonicgreenbg { background-color: hsl(125, 25%, 41%); }
-.gernaniangreenbg { background-color: hsl(145, 26%, 34%); }
-.clandoriangreenbg { background-color: hsl(150, 67%, 18%); }
-.orcanicgreenbg { background-color: hsl(154, 20%, 39%); }
-.arkhongraybg { background-color: hsl(157, 25%, 41%); }
-.welliscgreenbg { background-color: hsl(165, 89%, 22%); }
-.galovariangreenbg { background-color: hsl(167, 45%, 24%); }
-.almanicwhitebg { background-color: hsl(174, 19%, 80%); }
-.aganniancyanbg { background-color: hsl(184, 61%, 40%); }
-.meeranianbluebg { background-color: hsl(191, 36%, 39%); }
-.eratiantealbg { background-color: hsl(207, 79%, 34%); }
-.luvianbluebg { background-color: hsl(206, 94%, 21%); }
-.neraylianbluebg { background-color: hsl(209, 35%, 41%); }
-.segrishbluebg { background-color: hsl(212, 41%, 48%); }
-.nordicbluebg { background-color: hsl(214, 48%, 62%); }
-.Weldianbluebg { background-color: hsl(227, 46%, 35%); }
-.laelianbluebg { background-color: hsl(238, 74%, 34%); }
-.lydianindigobg { background-color: hsl(251, 53%, 29%); color: white; }
-.estarianpurplebg { background-color: hsl(278, 43%, 36%); }
-.erelmagentabg { background-color: hsl(327, 70%, 26%); }
-.vanneanpinkbg { background-color: hsl(343, 74%, 46%); }
-.thrannianredbg { background-color: hsl(349, 48%, 30%); }
-.imperiumredbg { background-color: hsl(350, 95%, 34%);}
-.sxaelredbg { background-color: hsl(352, 100%, 17%); }
-.medianredbg { background-color: hsl(355, 84%, 30%); }
-.lordomblackbg { background-color: hsl(40, 10%, 6%); }
-.draconianwhitebg { background-color: hsl(192, 30%, 87%); }
+.hesre { background-color: hsl(9, 71%, 45%); }
+.berian { background-color: hsl(37, 67%, 25%); }
+.mercia { background-color: hsl(46, 75%, 47%); }
+.saringia { background-color: hsl(47, 75%, 65%); }
+.nemia { background-color: hsl(56, 78%, 56%); }
+.andoarchia { background-color: hsl(60, 15%, 17%); }
+.ograrag { background-color: hsl(83, 29%, 22%); }
+.aemhoria { background-color: hsl(103, 34%, 59%); }
+.mediarkhonia { background-color: hsl(125, 25%, 41%); }
+.gernania { background-color: hsl(145, 26%, 34%); }
+.clando { background-color: hsl(150, 67%, 18%); }
+.orkarak { background-color: hsl(154, 20%, 39%); }
+.arkhonia { background-color: hsl(157, 25%, 41%); }
+.wel { background-color: hsl(165, 89%, 22%); }
+.galovaria { background-color: hsl(167, 45%, 24%); }
+.almaniag { background-color: hsl(174, 19%, 80%); }
+.agannia { background-color: hsl(184, 61%, 40%); }
+.meerania { background-color: hsl(191, 36%, 39%); }
+.eratan { background-color: hsl(207, 79%, 34%); }
+.luv { background-color: hsl(206, 94%, 21%); }
+.nerayl{ background-color: hsl(209, 35%, 41%); }
+.sigisria{ background-color: hsl(212, 41%, 48%); }
+.nord { background-color: hsl(214, 52%, 26%); }
+.weldan { background-color: hsl(227, 46%, 35%); }
+.layel { background-color: hsl(238, 74%, 34%); }
+.lydion { background-color: hsl(251, 53%, 29%);}
+.estaran { background-color: hsl(278, 43%, 36%); }
+.erel { background-color: hsl(327, 70%, 26%); }
+.vannea { background-color: hsl(343, 74%, 46%); }
+.thrannia { background-color: hsl(349, 48%, 30%); }
+.imperium { background-color: hsl(350, 95%, 34%);}
+.sxael { background-color: hsl(352, 100%, 17%); }
+.media { background-color: hsl(355, 84%, 30%); }
+.lordom { background-color: hsl(40, 10%, 6%); }
+.draconia { background-color: hsl(192, 30%, 87%); }
 
-.caeliangoldtxt h2, .caeliangoldtxt h3, .caeliangoldtxt p { 
+.gold h2, .gold h3, .gold p { 
 
     background: radial-gradient(circle,#F5DBA1 0%, #C19A5D 33%, #A45303 67%, #5B2C01 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;}
+
+.silver h2, .silver h3, .silver p {
+    background: radial-gradient(circle,#F0F0F0 0%, #D5DBE2 33%, #91969E 67%, #5D656C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 html{
     padding: 0%;
@@ -136,6 +145,10 @@ h3 {
 }
 .inftit p{
     margin: 0%;
+}
+
+a {
+    font-style: italic;
 }
 .info{
     border: 1px black solid;
