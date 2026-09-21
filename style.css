@@ -138,6 +138,7 @@ h1, h2, h3, h4, h5, h6{
 h1{
     border-bottom: 1px black solid;
     font-size: 3em;
+    width: fit-content;
 }
 h2{
     font-size: 2em;
@@ -155,7 +156,17 @@ h3 {
 
 a {
     font-style: italic;
+    color: #888;
+    text-decoration: none;
+    
 }
+
+a:hover{
+    color: #d00;
+    -webkit-transition: color 250ms linear;
+}
+
+
 .info{
     border: 1px black solid;
     padding: 4px;
@@ -217,8 +228,8 @@ a {
     text-align: right;
 }
 img{
-    max-width: 15em;
-    max-height: 30em;
+    max-width: 25vw;
+    max-height: 50vh;
     display: block;
 }
 .image{
