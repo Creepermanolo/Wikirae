@@ -1,11 +1,43 @@
 [
     {
-        "nom": "Accueil",
-        "fichier": "index.html"
-    },
-    {
         "nom": "Ancien Lydion",
         "fichier": "Lydion_old_kingdom.html"
+    },
+    {
+        "nom": "IIIe Royaume de Luv",
+        "fichier": "Luv_third_Kingdom.html"
+    },
+    {
+        "nom": "Rebublic of Media",
+        "fichier": "Republic_media.html"
+    },
+    {
+        "nom": "Royaume d'Erel",
+        "fichier": "Kingdom_erel.html"
+    },
+    {
+        "nom": "Royaume de Hesre",
+        "fichier": "Kingdom_hesria.html"
+    },
+    {
+        "nom": "Royaume de Lordome",
+        "fichier": "Kingdom_lordom.html"
+    },
+    {
+        "nom": "Royaume de Saringie",
+        "fichier": "Kingdom_draconia.html"
+    },
+    {
+        "nom": "Royaume de Saringie",
+        "fichier": "Kingdom_saringia.html"
+    },
+    {
+        "nom": "Royaume de Wel",
+        "fichier": "Kingdom_wel.html"
+    },
+    {
+        "nom": "Royaume du nord",
+        "fichier": "Nordic Empire.html"
     },
     {
         "nom": "Saint Empire",

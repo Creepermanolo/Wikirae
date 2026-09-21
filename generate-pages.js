@@ -4,14 +4,17 @@ const path = require("path");
 const dossier = __dirname;
 
 const fichiersExclus = [
-    "recherche.html"
+    "index.html"
 ];
 
 function extraireTitre(contenu, nomFichier) {
+    // bool correspondance
     const correspondance = contenu.match(
         /<title[^>]*>([\s\S]*?)<\/title>/i
     );
 
+
+    // si oui 
     if (correspondance) {
         return correspondance[1]
             .replace(/\s+/g, " ")

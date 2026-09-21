@@ -102,6 +102,12 @@ body{
     -webkit-text-fill-color: transparent;
 }
 
+.blood h2, .blood h3, .blood p {
+    background: radial-gradient(circle,#970612 0%, #5e0217 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 html{
     padding: 0%;
@@ -162,7 +168,14 @@ a {
 }
 
 .info table{
-    width:100%
+    width:100%;
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+.info th{
+    text-align: left;
+    width: 50%;
 }
 .inftit{
 
@@ -189,12 +202,14 @@ a {
     margin-bottom: 1em;
 }
 .mainquote {
+    
     font-weight: bold;
-    font-style: italic;
+    font-family: "Cormorant SC", serif;
     margin-bottom: 8px;
     font-size: 1.5em;
 }
 .transquote {
+    font-family: "Cormorant SC", serif;
     font-style: italic;
     margin-bottom: 8px;
 }
