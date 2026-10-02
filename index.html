@@ -16,26 +16,28 @@
 
 <body>
 
-        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh;">
-            <p class="indexp">Bienvenue sur le Wikirae</p>
-            <div class="index1">
-                
-                <form id="searchForm" autocomplete="off">
-                    <div class="search-line">
-                        <div class="search-box">
-                            <span class="search-icon">⌕</span>
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh;">
+        <p class="indexp">Bienvenue sur le Wikirae</p>
+        <div class="index1">
             
-                            <input type="search" id="search" placeholder="Rechercher sur Wikirae" aria-autocomplete="list"
-                                aria-controls="suggestions" required>
-            
-                            <ul id="suggestions" role="listbox"></ul>
-                        </div>
-                        <button type="submit">Rechercher</button>
+            <form id="searchForm" autocomplete="off">
+                <div class="search-line">
+                    <div class="search-box">
+                        <span class="search-icon">⌕</span>
+        
+                        <input type="search" id="search" placeholder="Rechercher sur Wikirae" aria-autocomplete="list"
+                            aria-controls="suggestions" required>
+        
+                        <ul id="suggestions" role="listbox"></ul>
                     </div>
-                </form>
-                <script src="recherche.js"></script>
-            </div>
+                    <button type="submit">Rechercher</button>
+                </div>
+            </form>
+            <script src="pages.js"></script>
+            <script src="recherche.js"></script>
         </div>
+    </div>
+
 </body>
 
 </html>
