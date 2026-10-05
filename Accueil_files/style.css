@@ -31,8 +31,7 @@ body{
     --Weldianblue: hsl(227, 46%, 35%);
     --laelianblue: hsl(238, 74%, 34%);
     --lydianindigo: hsl(251, 53%, 29%);
-    
-    --aestarianpurple: hsl(278, 43%, 36%);
+    --aestarianpurple: hsl(288, 43%, 36%);
     --erelmagenta: hsl(327, 70%, 26%);
     --vanneanpink: hsl(343, 74%, 46%);
     --thrannianred: hsl(349, 48%, 30%);
@@ -80,7 +79,7 @@ body{
 .weldan { background-color: hsl(227, 46%, 35%); }
 .layel { background-color: hsl(238, 74%, 34%); }
 .lydion { background-color: hsl(251, 53%, 29%);}
-.estaran { background-color: hsl(278, 43%, 36%); }
+.estaran { background-color: hsl(288, 43%, 36%); }
 .erel { background-color: hsl(335, 88%, 28%); }
 .vannea { background-color: hsl(343, 74%, 46%); }
 .thrannia { background-color: hsl(349, 48%, 30%); }
@@ -117,7 +116,8 @@ html{
     margin-right: 10%;
     background-color: white;
     padding: 5%;
-    padding-top: 8px;
+    padding-bottom: 0% ;
+    padding-top: 1em;
 }
 .head{
     background-color: white;
@@ -185,6 +185,11 @@ a:hover{
     margin-left: 1em;
 }
 
+.info p{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
 .info table{
     width:100%;
     padding-left: 1em;
@@ -193,6 +198,7 @@ a:hover{
 }
 .info th{
     text-align: left;
+    vertical-align: top;
     width: 50%;
 }
 
@@ -273,7 +279,30 @@ img{
     max-width: 50%;
     max-height: 33vh;
 }
-
+@media (orientation: portrait) {
+    body{
+        font-size: 12px;
+        box-sizing: border-box;
+    }
+  .main {
+    margin : 0%
+  }
+  .info{
+    float: none;
+    width: 100%;
+    margin-left: 0%;
+  }
+  .quote{
+    width: 100%;
+  }
+  .head{
+    margin: 0%;
+  }
+  .index1{
+    position:relative; width: 90vw;
+  }
+  
+}
 .hor_tab{
     display: flex;
     flex-direction: row;
@@ -385,30 +414,18 @@ img{
     width: 50vw;
     margin-bottom: 0;
     display: inline;
+    margin-top: 0;
 }
 
-@media (orientation: portrait) {
-    body{
-        font-size: 12px;
-        box-sizing: border-box;
-    }
-  .main {
-    margin : 0%
-  }
-  .info{
-    float: none;
-    width: 100%;
-    margin-left: 0%;
-  }
-  .quote{
-    width: 100%;
-  }
-  .head{
-    margin: 0%;
-  }
-  .index1{
-    position:relative;
-    width: 90vw;
-  }
-  
+.footer{
+    border: #ccc solid 1px;
+    padding-left: 25%;
+    position: sticky;
+    bottom: 0px;
+}
+.footerp{
+    border-top: #ccc solid 1px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 0;
 }
