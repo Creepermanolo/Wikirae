@@ -34,6 +34,7 @@ def generate_html(title: str) -> str:
 
 
     <div class="head">
+    <h1>{title}</h1>
     <form id="searchForm" autocomplete="off">
         <div class="search-line">
             <div class="search-box">
@@ -54,7 +55,6 @@ def generate_html(title: str) -> str:
     <script src="recherche.js"></script>
 </div>
     <div class="main">
-        <h1>{title}</h1>
         <div class="info">
             <div class="inftit">
                 <h2>{title}</h2>
