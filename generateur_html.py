@@ -1,16 +1,30 @@
 #!/usr/bin/env python3
 """
 Générateur de fichier HTML pour Wikirae
-Usage: python generateur_html.py --title "Nom de la page"
+Usage: python generateur_html.py
+Pour chaque page, le script demande :
+  - le code (nom du fichier, sans .html)
+  - le titre de la page
+  - les lignes de <div class="inftit"> : classes, nom (h2), sous-titre (h3), dates (p)
+Entrée vide = valeur par défaut / champ laissé vide.
 """
 
-import argparse
+from html import escape
 from pathlib import Path
 
 
-def generate_html(title: str) -> str:
-    """Génère le contenu HTML avec le titre spécifié."""
-    
+def generate_html(title, classes="", nom="", sous_titre="", dates=""):
+    """Génère le contenu HTML avec le titre et l'encadré inftit spécifiés."""
+
+    title = escape(title, quote=False)
+    nom = escape(nom or title, quote=False)
+    sous_titre = escape(sous_titre, quote=False)
+    dates = escape(dates, quote=False)
+    classes = escape(" ".join(classes.split()), quote=True)
+
+    # class="inftit" + classes supplémentaires éventuelles (ex. "imperium gold")
+    inftit_class = f"inftit {classes}" if classes else "inftit"
+
     html_content = f'''<!DOCTYPE html>
 <html lang="en">
 
@@ -56,10 +70,10 @@ def generate_html(title: str) -> str:
 </div>
     <div class="main">
         <div class="info">
-            <div class="inftit">
-                <h2>{title}</h2>
-                <h3></h3>
-                <p></p>
+            <div class="{inftit_class}">
+                <h2>{nom}</h2>
+                <h3>{sous_titre}</h3>
+                <p>{dates}</p>
             </div>
             <h2>Description</h2>
             <table>
@@ -93,41 +107,49 @@ def generate_html(title: str) -> str:
 
 
 </html>'''
-    
+
     return html_content
 
 
-def main():
-    parser = argparse.ArgumentParser(
-        description='Générateur de fichier HTML pour Wikirae'
-    )
-    parser.add_argument(
-        '--title', '-t',
-        type=str,
-        required=True,
-        help='Nom de la page (titre)'
-    )
-    parser.add_argument(
-        '--output', '-o',
-        type=str,
-        default=None,
-        help='Nom du fichier de sortie (par défaut: <title>.html)'
-    )
-    
-    args = parser.parse_args()
-    
-    # Générer le HTML
-    html_content = generate_html(args.title)
-    
-    # Déterminer le nom du fichier
-    output_file = args.output if args.output else f"{args.title}.html"
-    
-    # Écrire le fichier
-    output_path = Path(output_file)
-    output_path.write_text(html_content, encoding='utf-8')
-    
-    print(f"✓ Fichier généré : {output_path.absolute()}")
+def sauvegarder_html():
+    while True:
+        titre = input("Code de la page (n pour quitter) : ").strip()
+
+        if titre == "n":
+            break
+
+        if not titre:
+            print("Erreur : le code ne peut pas être vide.")
+            return
+
+        fichier = Path(f"{titre}.html")
+
+        if fichier.exists():
+            confirmation = input(
+                f"{fichier.name} existe déjà. Remplacer ? (o/n) : "
+            ).strip().lower()
+
+            if confirmation not in ("o", "oui"):
+                print("Sauvegarde annulée.")
+                return
+
+        titre_page = input("Titre de la page : ").strip()
+
+        # Lignes de <div class="inftit ...">
+        classes = input("Classes de inftit (ex. imperium gold, vide = aucune) : ").strip()
+        nom = input(f"Nom <h2> (vide = {titre_page}) : ").strip()
+        sous_titre = input("Sous-titre <h3> (ex. Imperium Sanctus) : ").strip()
+        dates = input("Dates <p> (ex. 1 - 705) : ").strip()
+
+        try:
+            fichier.write_text(
+                generate_html(titre_page, classes, nom, sous_titre, dates),
+                encoding="utf-8",
+            )
+            print(f"Fichier sauvegardé : {fichier.resolve()}")
+        except OSError as erreur:
+            print(f"Erreur lors de la sauvegarde : {erreur}")
 
 
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+    sauvegarder_html()
