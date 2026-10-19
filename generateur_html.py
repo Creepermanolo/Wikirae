@@ -8,7 +8,7 @@ import argparse
 from pathlib import Path
 
 
-def generate_html(title: str) -> str:
+def generate_html(title):
     """Génère le contenu HTML avec le titre spécifié."""
     
     html_content = f'''<!DOCTYPE html>
@@ -97,37 +97,33 @@ def generate_html(title: str) -> str:
     return html_content
 
 
-def main():
-    parser = argparse.ArgumentParser(
-        description='Générateur de fichier HTML pour Wikirae'
-    )
-    parser.add_argument(
-        '--title', '-t',
-        type=str,
-        required=True,
-        help='Nom de la page (titre)'
-    )
-    parser.add_argument(
-        '--output', '-o',
-        type=str,
-        default=None,
-        help='Nom du fichier de sortie (par défaut: <title>.html)'
-    )
-    
-    args = parser.parse_args()
-    
-    # Générer le HTML
-    html_content = generate_html(args.title)
-    
-    # Déterminer le nom du fichier
-    output_file = args.output if args.output else f"{args.title}.html"
-    
-    # Écrire le fichier
-    output_path = Path(output_file)
-    output_path.write_text(html_content, encoding='utf-8')
-    
-    print(f"✓ Fichier généré : {output_path.absolute()}")
+def sauvegarder_html():
+    while True:
+        titre = input("Code de la page : ").strip()
+
+        if titre=="n":
+            break
+
+        if not titre:
+            print("Erreur : le code ne peut pas être vide.")
+            return
+
+        fichier = Path(f"{titre}.html")
+
+        if fichier.exists():
+            confirmation = input(
+                f"{fichier.name} existe déjà. Remplacer ? (o/n) : "
+            ).strip().lower()
+
+            if confirmation not in ("o", "oui"):
+                print("Sauvegarde annulée.")
+                return
+
+        try:
+            fichier.write_text(generate_html(input("Titre de la page : ")), encoding="utf-8")
+            print(f"Fichier sauvegardé : {fichier.resolve()}")
+        except OSError as erreur:
+            print(f"Erreur lors de la sauvegarde : {erreur}")
 
 
-if __name__ == '__main__':
-    main()
+sauvegarder_html()

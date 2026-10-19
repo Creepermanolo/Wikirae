@@ -1,0 +1,110 @@
+---
+title: Ier Royaume d'Erel
+output: Kingdom_erel.html
+heading-class: erel silver
+name: Royaume d'Erel
+---
+
+::: infobox
+Regnum Erelia / Erelrecum
+-1595 : -1162
+![](https://i.pinimg.com/736x/b5/41/19/b54119a331f796fa983053fd904a6d5d.jpg)
+
+## Description
+Devises: (Voir citations)
+Fête Nationale:
+
+## Administration
+Forme:
+  - Monarchie (-1595 : -1515)
+  - Démocratie (-1515 : -1162)
+Capitale: Cerva
+Langue: Nordo-Médien
+Monnaie: Graphe
+
+## Souverains
+1595 - 1591: Cassius Erelianus I
+1591 - 1568: Cassius Erelianus II
+1568 - 1535: Publius Erelianus
+1528 - 1515: Maximus Erelianus
+
+## Censeur Premier
+1515 - 1492: Maximus Erelianus
+1411 - 1371: Cassius Tellia
+1236 - 1224: Publius Erelianus
+1170 - 1162: Iunus Erelianus
+
+## Chronologie
+-1595: Création du Royaume
+-1587: Syndoxisation
+-1524: Révocation de la synodoxisation
+-1515: Indépendance du Royaume
+-1512: Instauration de la démocratie
+-1492: Abdication de Maximus
+-1485: Mort de Maximus
+-1411: Règne de Cassius III
+-1394: Cassius Tellia devient Empereur
+-1169: Révolte d'Hiver
+-1166: Début de la guerre civile
+-1162: Écrasement par Orius Dorius Cornia III
+:::
+
+::: nav
+Entités précédentes: [Empire Almane](Almanic_empire.html)
+Entités suivantes:
+  - [Dominion d'Erel](Dominion_Erel.html)
+  - [Royaume de Mède](Kingdom_Media.html)
+:::
+
+Le Royaume d'Erel est un état ayant existé de -1595 à -1162, créé entre les royaumes de Luv et de Mède comme état tampon suite aux guerres Almanes et supprimé lors des guerres d'unification de l'humanité.
+
+Au carrefour des cultures nordique et médienne, il est marqué par une diversité culturelle issue d'un **métissage** des deux cultures et langues. Cela en a fait un état au poids politique important de par son rôle dans l'échange commercial.
+
+- Maximus Erelianus (-1515 : -1492)
+- Cato Mercador (-1492 : -1487)
+- Theodric Ford (-1487 : -1477)
+- Cassius Tellia (-1411 : -1371)
+
+## Histoire
+
+### Fondation
+
+### Synodoxa
+
+### Renaissance
+
+1524
+
+1515
+
+1512
+
+1492
+
+### Age d'or
+
+1436
+
+1411
+
+1394
+
+### Guerres du Nord
+
+1192
+
+1189
+
+1174
+
+1169
+
+### Déclin Chute
+
+## Culture
+
+## Économie
+
+## Iconographie
+
+## Relations extérieurs
