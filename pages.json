@@ -1,7 +1,31 @@
 [
     {
+        "nom": "Aesthian II",
+        "fichier": "Aesthian_II.html"
+    },
+    {
         "nom": "Ancien Lydion",
         "fichier": "Lydion_old_kingdom.html"
+    },
+    {
+        "nom": "Draconie archaique",
+        "fichier": "Archaic_draconia.html"
+    },
+    {
+        "nom": "Empire de Gaulvyar",
+        "fichier": "Galovarian_empire.html"
+    },
+    {
+        "nom": "Erakhale",
+        "fichier": "Erakhal.html"
+    },
+    {
+        "nom": "Grand Nord Antique",
+        "fichier": "Antic_great_north.html"
+    },
+    {
+        "nom": "Haraïde",
+        "fichier": "Haraidia.html"
     },
     {
         "nom": "Ier Royaume d'Erel",
@@ -12,8 +36,36 @@
         "fichier": "Luv_third_Kingdom.html"
     },
     {
+        "nom": "L'Empereur",
+        "fichier": "Emperor_of_light.html"
+    },
+    {
+        "nom": "Mède",
+        "fichier": "Media.html"
+    },
+    {
+        "nom": "Méeran",
+        "fichier": "Meerania.html"
+    },
+    {
+        "nom": "Oridorius",
+        "fichier": "Oridorius_cornilla.html"
+    },
+    {
         "nom": "Rebublic of Media",
         "fichier": "Republic_media.html"
+    },
+    {
+        "nom": "Royaume de Clandor",
+        "fichier": "Kingdom_of_clandor.html"
+    },
+    {
+        "nom": "Royaume de Draconie",
+        "fichier": "Kingdom_draconia.html"
+    },
+    {
+        "nom": "Royaume de Gernanie",
+        "fichier": "Gernania.html"
     },
     {
         "nom": "Royaume de Hesre",
@@ -24,8 +76,8 @@
         "fichier": "Kingdom_lordom.html"
     },
     {
-        "nom": "Royaume de Saringie",
-        "fichier": "Kingdom_draconia.html"
+        "nom": "Royaume de Mercie",
+        "fichier": "Kingdom_of_mercia.html"
     },
     {
         "nom": "Royaume de Saringie",
@@ -37,7 +89,7 @@
     },
     {
         "nom": "Royaume du nord",
-        "fichier": "Nordic Empire.html"
+        "fichier": "Nordic_empire.html"
     },
     {
         "nom": "Saint Empire",
@@ -46,5 +98,17 @@
     {
         "nom": "Sainte Estaran",
         "fichier": "Holy_estaran.html"
+    },
+    {
+        "nom": "Sans titre",
+        "fichier": "README.html"
+    },
+    {
+        "nom": "Sègre",
+        "fichier": "Sigisdom.html"
+    },
+    {
+        "nom": "Test",
+        "fichier": "test.html"
     }
 ]

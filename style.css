@@ -4,7 +4,10 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
 body{
+    @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
     --hesrianvermillon: hsl(9, 71%, 45%);
     --berianicbrown: hsl(37, 67%, 25%);
     --mercianyellow: hsl(46, 75%, 47%);
@@ -40,7 +43,7 @@ body{
     --lordomblack: hsl(40, 10%, 6%);
     --draconianwhite: hsl(192, 30%, 87%);
 
-
+    
     border-collapse: collapse;
     box-sizing: border-box;
     background-color: #dddddd;
@@ -48,44 +51,10 @@ body{
     text-align: justify;
     margin: 0;
     font-size: 18px;
-    font-family: Times, serif;
+    font-family: "EB Garamond", serif;
 
 }
-.hesre { background-color: hsl(9, 71%, 45%); }
-.berian { background-color: hsl(37, 67%, 25%); }
-.mercia { background-color: hsl(46, 75%, 47%); }
-.saringia { background-color: hsl(47, 75%, 65%); }
-.nemia { background-color: hsl(56, 78%, 56%); }
-.andoarchia { background-color: hsl(60, 15%, 17%); }
-.ograrag { background-color: hsl(83, 29%, 22%); }
-.aemhoria { background-color: hsl(103, 34%, 59%); }
-.mediarkhonia { background-color: hsl(125, 25%, 41%); }
-.gernania { background-color: hsl(145, 26%, 34%); }
-.clando { background-color: hsl(150, 67%, 18%); }
-.orkarak { background-color: hsl(154, 20%, 39%); }
-.arkhonia { background-color: hsl(157, 25%, 41%); }
-.wel { background-color: hsl(165, 89%, 22%); }
-.galovaria { background-color: hsl(167, 45%, 24%); }
-.almaniag { background-color: hsl(174, 19%, 80%); }
-.agannia { background-color: hsl(184, 61%, 40%); }
-.meerania { background-color: hsl(191, 36%, 39%); }
-.eratan { background-color: hsl(207, 79%, 34%); }
-.luv { background-color: hsl(206, 94%, 21%); }
-.nerayl{ background-color: hsl(209, 35%, 41%); }
-.sigisria{ background-color: hsl(212, 41%, 48%); }
-.nord { background-color: hsl(214, 52%, 26%); }
-.weldan { background-color: hsl(227, 46%, 35%); }
-.layel { background-color: hsl(238, 74%, 34%); }
-.lydion { background-color: hsl(251, 53%, 29%);}
-.estaran { background-color: hsl(288, 43%, 36%); }
-.erel { background-color: hsl(335, 88%, 28%); }
-.vannea { background-color: hsl(343, 74%, 46%); }
-.thrannia { background-color: hsl(349, 48%, 30%); }
-.imperium { background-color: hsl(350, 95%, 34%);}
-.sxael { background-color: hsl(352, 100%, 17%); }
-.media { background-color: hsl(355, 84%, 30%); }
-.lordom { background-color: hsl(40, 10%, 6%); }
-.draconia { background-color: hsl(192, 30%, 87%); }
+
 
 .gold h2, .gold h3, .gold p { 
 
@@ -137,11 +106,12 @@ html{
 
 }
 button{
-    font-family: "Cormorant SC", serif;
+    font-family: "EB Garamond", serif;
 }
 h1, h2, h3, h4, h5, h6{
     margin-top: 0%;
-    font-family: "Cormorant SC", serif;
+    font-family: "EB Garamond", serif;
+    font-weight: normal;
     
 
 }
@@ -150,13 +120,18 @@ h1{
     background: white;
     top: 0%;
     margin-bottom: 0;
+    text-transform: uppercase;
 }
 h2{
+    font-weight: lighter;
     font-size: 2em;
 }
+
 h3 {
+    font-weight: lighter;
     font-size: 1.5em; 
 }
+
 .info h2, .info h3{
     margin-bottom: 0%;
     margin-top: 0%;
@@ -167,7 +142,7 @@ h3 {
 
 a {
     font-style: italic;
-    color: #888;
+    color: #000000;
     text-decoration: none;
     
 }
@@ -175,13 +150,15 @@ a {
 a:hover{
     color: hsl(240, 100%, 50%);
     -webkit-transition: color 250ms linear;
+    font-weight: 100;
 }
 
 
 .info{
     border: 1px #ccc solid;
-    padding: 4px;
+    padding: 0.5vw;
     display: flex;
+
     flex-direction: column;
     align-items: center;
     width : 25vw;
@@ -192,6 +169,7 @@ a:hover{
 .info p{
     padding-left: 1em;
     padding-right: 1em;
+    text-align: center;
 }
 
 .info table{
@@ -212,6 +190,9 @@ a:hover{
 
 .info .chr th{
     text-align: center;
+}
+.td{
+    vertical-align: top;
 }
 .info ul{
     margin: 0%;
@@ -236,20 +217,20 @@ a:hover{
 
 .quote {
     background-color: #dddddd;
-    padding: 5%;
-    width: 50%;
+
+    padding: 2em;
+    width: 44.5vw;
     border-radius: 16px;
     margin-bottom: 1em;
 }
 .mainquote {
-    
-    font-weight: bold;
-    font-family: "Cormorant SC", serif;
+
     margin-bottom: 8px;
-    font-size: 1.5em;
+    font-size:2em
+
 }
 .transquote {
-    font-family: "Cormorant SC", serif;
+
     font-style: italic;
     margin-bottom: 8px;
 }
@@ -291,9 +272,20 @@ img{
 .hor_tab{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: inherit;
+    
+    flex: 1;
+}
+
+.hor_tab div{
+    flex: 50%;
+}
+
+.hor_tab h3{
+    text-align: center;
 
 }
+
 
 .search-line {
     display: flex;
@@ -326,11 +318,10 @@ form{
     border-right: none;
     border-radius: 3px 0px 0 3px;
     background-color: white;
-    color: #ccc;
     font-size: 18px;
     box-sizing: border-box;
     outline: none;
-    font-family: Times, serif;
+
 
 }
 
@@ -400,7 +391,7 @@ form{
 }
 .indexp{
     font-size: 4.4vw;
-    font-family: "Cormorant SC", serif;
+
     font-weight: bold;
     text-align: center;
     width: 50vw;
@@ -453,3 +444,39 @@ form{
     position: relative;
   }
 }
+
+.hesre { background-color: hsl(9, 71%, 45%); }
+.berian { background-color: hsl(37, 67%, 25%); }
+.mercia { background-color: hsl(46, 75%, 47%); }
+.saringia { background-color: hsl(47, 75%, 65%); }
+.nemia { background-color: hsl(56, 78%, 56%); }
+.andoarchia { background-color: hsl(60, 15%, 17%); }
+.ograrag { background-color: hsl(83, 29%, 22%); }
+.aemhoria { background-color: hsl(103, 34%, 59%); }
+.mediarkhonia { background-color: hsl(125, 25%, 41%); }
+.gernania { background-color: hsl(145, 26%, 34%); }
+.clando { background-color: hsl(150, 67%, 18%); }
+.orkarak { background-color: hsl(154, 20%, 39%); }
+.arkhonia { background-color: hsl(157, 25%, 41%); }
+.wel { background-color: hsl(165, 89%, 22%); }
+.galovaria { background-color: hsl(167, 45%, 24%); }
+.almaniag { background-color: hsl(174, 19%, 80%); }
+.agannia { background-color: hsl(184, 61%, 40%); }
+.meerania { background-color: hsl(191, 36%, 39%); }
+.eratan { background-color: hsl(207, 79%, 34%); }
+.luv { background-color: hsl(206, 94%, 21%); }
+.nerayl{ background-color: hsl(209, 35%, 41%); }
+.segerland{ background-color: hsl(212, 41%, 48%); }
+.nord { background-color: hsl(214, 52%, 26%); }
+.weldan { background-color: hsl(227, 46%, 35%); }
+.layel { background-color: hsl(238, 74%, 34%); }
+.lydion { background-color: hsl(251, 53%, 29%);}
+.estaran { background-color: hsl(288, 43%, 36%); }
+.erel { background-color: hsl(335, 88%, 28%); }
+.vannea { background-color: hsl(343, 74%, 46%); }
+.thrannia { background-color: hsl(349, 48%, 30%); }
+.imperium { background-color: hsl(350, 95%, 34%);}
+.sxael { background-color: hsl(352, 100%, 17%); }
+.media { background-color: hsl(355, 84%, 30%); }
+.lordom { background-color: hsl(40, 10%, 6%); }
+.draconia { background-color: hsl(192, 30%, 87%); }
