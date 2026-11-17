@@ -9,6 +9,10 @@ img {
 }
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Copse&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
 body{
     @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
     --hesrianvermillon: hsl(9, 71%, 45%);
@@ -55,6 +59,9 @@ body{
     margin: 0;
     font-size: 18px;
     font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 
 }
 
@@ -119,7 +126,8 @@ h1, h2, h3, h4, h5, h6{
 
 }
 h1{
-    font-size: 2em;
+    font-size: 42px;
+    line-height: 42px;
     background: white;
     top: 0%;
     margin-bottom: 0;
@@ -127,7 +135,8 @@ h1{
 }
 h2{
     font-weight: lighter;
-    font-size: 2em;
+    font-size: 1.5em;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -308,6 +317,7 @@ a:hover{
 form{
     height: fit-content;
     justify-content: space-between;
+    width: 25vw;
 
 }
 
