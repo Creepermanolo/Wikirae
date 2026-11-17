@@ -9,6 +9,8 @@ img {
 }
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
 body{
     @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
     --hesrianvermillon: hsl(9, 71%, 45%);
